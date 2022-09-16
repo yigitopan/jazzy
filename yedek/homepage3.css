@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+.hp-item {
+    padding-bottom: 50px;
+}
+
+.hp-title h1{
+    font-size: 70px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 800;
+}
+
+.hp-img-container {
+    position: relative;
+}
+
+
+.hp-icons div, .hp-icon-overlay {
+    height: 400px;
+}
+
+.hp-icon-overlay {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(102%) contrast(105%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hp-icons div  {
+ border-radius: 35px;
+ padding: 0 10px;;
+}
+
+.hp-img-container {
+    position: relative;
+    background-size: cover;
+    background-position-x: 50%;
+}
+
+.hp-img-container:first-child {
+    background-position-y: 60%;
+}
+
+
+.hp-bilgi {
+    color: white;
+    background-color: #e35551;
+    border-radius: 35px;
+}
+
+.bilgi-title {
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.bilgi-subtitle {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+
+.read-all {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 12px 45px;
+    color: white;
+    transition: 0.3s all;
+}
+
+.read-all:hover {
+    background-color: white;
+    color: #e35551;
+}
+
+.hp-bilgi .row {
+    padding: 45px 60px;;
+}
+
+.bilgilendirici-img {
+    border-radius: 15px;
+    background-size: contain;
+    background-image: url('../assets/bilgilendirici-kopek.png');
+    background-repeat: no-repeat;
+}
+
+.grid-pets .grid-pet-container {
+background-position: 50% 50%;
+height: 300px;
+background-size: contain;
+background-repeat: no-repeat;
+}
+
