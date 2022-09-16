@@ -445,6 +445,7 @@ transform: translate(-30%);
 }
 
 .page-switch {
+    width: 150px;
     cursor: pointer;
     position: fixed;
     bottom: 0;
