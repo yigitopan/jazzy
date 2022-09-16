@@ -455,12 +455,12 @@ transform: translate(-30%);
 }
 
 .page-switch:hover > img {
-    transform: translateY(-15%);
+    transform: translateY(-12%);
 }
 
 .page-switch img {
     width: 150px;
-    transform: translateY(-25%);
+    transform: translateY(-15%);
     transition: all 1s;
 }
 
