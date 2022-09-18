@@ -498,3 +498,120 @@ transform: translate(-30%);
     top: 20%;
     width: 50%;
 }
+
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#1920EF;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #F20000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  @media (max-width:830px) {
+    .header-desk {
+        display: none;
+    }
+
+    .header-mobile {
+        display: block!important;
+    }
+}
+
+.header-mobile {
+    display: none;
+}
+.filter-collection input, .filter-collection-mobile input, .filter-collection-mobile label, .filter-collection label {
+    cursor: pointer;
+}
+
+.header-icons div {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    cursor:pointer;
+    padding: 10px;
+
+}
+
+header .header {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.header-icons img {
+    width: 10px;
+    height: 10px;
+}
+
+
+.header-icons {
+}
+
+.header-item a {
+    text-decoration: none!important;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.header-item:not(.header-logo) {
+    padding-top: 10px;
+}
+
+.header-logo img{
+    width: 150px;
+}
+
+.header-blog {
+    padding-right: 8vh;
+}
