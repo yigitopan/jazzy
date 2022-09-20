@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+@media (max-width:992px) {
+    .product-blog img {
+        width: 50%!important;
+    }
+
+    .grid-title, .grid-gr {
+        font-size: 16px!important;
+    }
+
+    .grid-desc, .grid-inspect, .grid-gr {
+        font-size: 12px!important;
+    }
+
+    .grid-inspect {
+        padding: 3px 5px!important;
+    }
+
+    .item-grid {
+        padding: 0px 20px!important;
+    }
+
+    .blog-text-container {
+        padding: 40px 40px 0 40px!important;
+    }
+
+    .blog-context {
+        font-size: 12px!important;
+    }
+
+    .breadcrumbs-row {
+        padding: 0!important;
+    }
+
+    .breadcrumbs-left {
+        padding: 0!important;
+    }
+
+    .breadcrumbs-left p{
+       font-size: 12px!important;
+    }
+}
+
+
+
+@media (min-width:992px) {
+    .product-blog img {
+        width: 100%;
+    }
+
+    .item-grid {
+        padding: 0 50px!important;
+    }
+
+    .blog-text-container {
+        padding: 40px 0 40px 90px!important;
+    }
+}
+
+
+
+
+
+body, html {
+    overflow-x: hidden;
+    font-family: 'M PLUS Rounded 1c', sans-serif!important;
+}
+
+.product-container {
+    width: 95%;
+    margin: auto;
+
+}
+
+.breadcrumbs p{
+    white-space: nowrap;
+}
+
+.breadcrumbs h3{
+    font-weight: 800;
+}
+
+.breadcrumbs-right img {
+    width: 250px;
+    z-index: -2;
+}
+
+.breadcrumbs-right {
+    position: relative;
+    align-items: flex-start;
+}
+
+
+.breadcrumbs-right div {
+    position:absolute;
+    z-index: -3;
+    right: -20%;
+    width: 100%;
+    border-top: 4px solid #1920EF;
+    top: 90%;
+}
+
+.product-main-img {
+    width: 100%;
+    max-width: 600px;
+ border-radius: 30px;
+-webkit-box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
+-moz-box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
+box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
+}
+
+.product-info h2 {
+    font-weight: 800;
+    color: #1920EF;;
+}
+
+
+.product-info span.info {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.product-btn {
+    background-color: #1920EF;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+.product-btn span{
+    color: #ffc220;
+}
+
+
+.product-text-col {
+    padding-left: 50px;
+}
+
+.desc {
+    font-size: 13px;
+}
+
+
+.item-grid-inner img {   
+    max-width:70%;
+}
+
+.item-grid {
+ margin-bottom: 35px;
+}
+
+.item-grid-inner {
+border-radius: 30px;
+-webkit-box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
+-moz-box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
+box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
+
+}
+
+.item-grid-inner:hover > div h3, .item-grid-inner:hover > div p, .item-grid-inner:hover > div .grid-gr{
+    color: white;
+}
+
+.item-grid-inner:hover > div .grid-inspect a{
+    background-color: #ffc220;
+    color: #1920EF;
+}
+
+.item-grid-inner:hover > div .grid-inspect a span{
+    color: #F20000;
+}
+
+
+                    
+
+
+.item-grid .inner:hover > div h3, .item-grid .inner:hover > div p{
+    color: white;
+}
+
+.item-grid .inner:hover > div .grid-inspect a{
+    background-color: #ffc220;
+    color: #1920EF;
+}
+
+.item-grid .inner:hover > div .grid-inspect a span{
+    color: #F20000;
+}
+
+
+
+.item-grid .inner:hover {
+    cursor: pointer;
+    background-color: #1920EF;
+}
+
+
+.grid-title {
+    font-size: 22px;
+    color: #1920EF;
+    font-weight: 800;
+}
+
+.grid-gr {
+    white-space: nowrap;
+    font-weight: 800;
+    color: #F20000;
+}
+
+.grid-inspect a{
+    border: none;
+    background-color: #F20000;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.grid-bottom {
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+}
+
+.item-grid .inner, .product-blog {
+    border-radius: 30px;
+    -webkit-box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
+    -moz-box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
+    box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
+}
+
+
+.item-grid img {
+    width: 100%;
+}
+
+.suggested-title {
+    padding: 50px 0;
+    font-weight: 800;
+}
+
+.blog-text {
+    font-size: 25px;
+    font-weight: 800;
+    color: #F20000;
+}
+
+.blog-title {
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.product-blog {
+    margin-bottom: 3rem;
+}
