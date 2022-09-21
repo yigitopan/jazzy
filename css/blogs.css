@@ -1,0 +1,24 @@
+.blog-img {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 30px 30px 0 0 ;
+}
+
+.blog-title {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+
+.post-blog {
+    border-radius: 30px;
+-webkit-box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
+-moz-box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
+box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
+}
+
+.blogs-container {
+    padding: 60px 0;
+}

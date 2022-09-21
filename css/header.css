@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+@font-face {
+  font-family: roundedDefault;
+  src: url(../assets/font/RoundedMplus1c-Regular.ttf);
+}
 
-header {
-  font-family: 'M PLUS Rounded 1c', sans-serif!important;
+@font-face {
+  font-family: roundedBold;
+  src: url(../assets/font/RoundedMplus1c-ExtraBold.ttf);
+}
+
+header, body, footer {
+  font-family: roundedDefault!important;
 }
 
 .overlay {
@@ -26,7 +34,7 @@ header {
   
   .overlay a {
     text-transform: uppercase;
-    font-weight: 800;
+    font-family: roundedBold!important;
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -64,6 +72,10 @@ header {
     .header-mobile {
         display: block!important;
     }
+    .header-mobile .header{
+      margin:0;
+    }
+    
 }
 
 .header-mobile {
@@ -87,6 +99,7 @@ header {
 }
 
 header .header {
+  align-items: center;
     width: 100%;
     justify-content: space-around;
 }
@@ -101,8 +114,8 @@ header .header {
     text-decoration: none!important;
     color: black;
     text-transform: uppercase;
-    font-weight: 800;
-}
+    font-family: roundedBold!important;
+  }
 
 .header-item:not(.header-logo) {
     padding-top: 10px;

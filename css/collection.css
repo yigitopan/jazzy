@@ -1,8 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
-
-
 .filter-collection input, .filter-collection-mobile input, .filter-collection-mobile label, .filter-collection label {
     cursor: pointer;
+}
+
+
+.pattern-bg {
+    background-image: url('../assets/JazzyPattern1.png');
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    z-index: -35;
 }
 
 .body-filter-open {
@@ -19,7 +29,7 @@ overflow: hidden;
 }
 
 .filter-p {
-    font-weight: 800;
+    font-family: roundedBold!important;
     margin: 0;
 }
 
@@ -33,7 +43,7 @@ overflow: hidden;
 }
 
 .filter-plus {
-    font-weight: 800;
+    font-family: roundedBold!important;
     cursor: pointer;
 }
 
@@ -46,7 +56,7 @@ html, body{
 }
 
 .filter-mobile-close {
-    font-weight: 800;
+    font-family: roundedBold!important;
     font-size: 30px;
     height: 1px;
     display: flex;
@@ -101,6 +111,19 @@ html, body{
         padding: 5px 15px;
         margin: 0 0 15px 15px;
     }
+    
+}
+
+@media (max-width:990px) {
+    .grid-title {
+        font-size: 22px!important;
+    }
+}
+
+@media (max-width:520px) {
+    .grid-title {
+        font-size: 18px!important;
+    }
 }
 
 @media (max-width:465px){
@@ -118,7 +141,7 @@ html, body{
 }
 
 .breadcrumbs h3{
-    font-weight: 800;
+    font-family: roundedBold!important;
 }
 
 .breadcrumbs-right img {
@@ -145,20 +168,20 @@ html, body{
 .collection-container {
     margin: auto;
     width: 95%;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
     transition: all 0.4s;
 }
 
 .grid-title {
-    font-size: 22px;
+    white-space: nowrap;
+    font-size: 30px;
     color: #1920EF;
-    font-weight: 800;
+    font-family: roundedBold!important;
 }
 
 .filter-title {
     font-size: 16px;
     color: #1920EF;
-    font-weight: 800;
+    font-family: roundedBold!important;
 }
 
 .filter-desc {
@@ -168,14 +191,14 @@ html, body{
 
 .grid-gr {
     white-space: nowrap;
-    font-weight: 800;
+    font-family: roundedBold!important;
     color: #F20000;
 }
 
 .filter-gr {
     font-size: 12px;
     white-space: nowrap;
-    font-weight: 800;
+    font-family: roundedBold!important;
     color: #F20000;
 }
 
@@ -194,6 +217,7 @@ html, body{
 
 .item-grid-inner {
 border-radius: 30px;
+background: white;
 -webkit-box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
 -moz-box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
 box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
@@ -264,7 +288,7 @@ box-shadow: 1px 1px 42px 1px rgb(0 0 0 / 17%);
   
   .overlay a {
     text-transform: uppercase;
-    font-weight: 800;
+    font-family: roundedBold!important;
     padding: 8px;
     text-decoration: none;
     font-size: 36px;

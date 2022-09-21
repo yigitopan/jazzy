@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - </title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<header class="header-desk">
+    <div class="row flex-wrap header">
+        <div class="header-item header-logo"><img class="img-responsive" src="assets/jazzy-logo/Jazy_logo-01.png" alt=""></div>
+        <div class="header-item"><a href="">Ana Sayfa</a></div>
+        <div class="header-item"><a href="">Hakkımızda</a></div>
+        <div class="header-item"><a href="collection.html">Ürünler</a></div>
+        <div class="header-item header-blog"><a href="">Blog</a></div>
+        <div class="header-item"><a href="">İLETİŞİM</a></div>
+        <div class="header-item header-icons row">
+            <div class="d-flex"><img src="assets/facebook-social-logo-svgrepo-com.svg" alt=""></div>
+            <div class="d-flex"><img src="assets/instagram-logo-svgrepo-com.svg" alt=""></div>
+            <div class="d-flex"><img src="assets/twitter-svgrepo-com.svg" alt=""></div>
+        </div>        
+    </div>
+</header>
+<header class="header-mobile">
+    <div class="row flex-wrap header align-items-center m-0">
+        <div class="header-item"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
+        <div class="header-item header-logo"><img class="img-responsive" src="assets/jazzy-logo/Jazy_logo-01.png" alt=""></div>
+        <div class="header-item header-icons row">
+                <div class="d-flex"><img src="assets/facebook-social-logo-svgrepo-com.svg" alt=""></div>
+                <div class="d-flex"><img src="assets/instagram-logo-svgrepo-com.svg" alt=""></div>
+                <div class="d-flex"><img src="assets/twitter-svgrepo-com.svg" alt=""></div>
+        </div>        
+    </div>
+</header>
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">Ana Sayfa</a>
+            <a href="#">Hakkımızda</a>
+            <a href="collection.html">Ürünler</a>
+            <a href="#">Blog</a>
+            <a href="#">İletişim</a>
+        </div>
+      </div>
+    
+    <div class="blog-post-container container">
+      <div class="row">
+        <div class="col-12">
+            <p class="mb-2 blog-header"><span>Blog Gönderisi</span> - <span>21.09.2022</span></p>
+        </div>
+        <div class="col-12"><h2 class="mb-3 blog-title">Bu Bir Örnek Blog Basligidir, Örnek!</h2></div>
+
+        <div class="col-12">
+            <p class="blog-subheader mb-5">Blog Subheader buraya gelecek</p>
+        </div> 
+
+        <div class="col-12 d-flex justify-content-center"><img class="mb-5 blog-img" src="assets/Blog_Kediler.png" alt=""></div>
+        <div class="col-12"><p class="text-left content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde fuga aliquid nostrum illo minima neque nihil pariatur. Saepe debitis distinctio temporibus accusamus nemo deleniti sint ad, optio dolores quo nostrum?
+        Rem quos quam consequuntur explicabo ad, eius amet ipsum officiis sequi ex voluptates! Provident numquam nemo accusamus blanditiis ea. Unde adipisci cupiditate velit inventore quia, excepturi corporis quaerat obcaecati distinctio.
+        Quaerat, suscipit necessitatibus sequi vero vel cupiditate fugiat veniam minima, atque voluptate laudantium ea cumque nulla numquam eius eos eum commodi unde perspiciatis voluptatum voluptatem alias ab! Perferendis, repellendus delectus.
+        Fuga nostrum ratione autem. Voluptas laboriosam, repellendus vero exercitationem dolores odio nulla reiciendis. Vel est dignissimos ad quisquam ratione exercitationem et ducimus, dicta neque cum dolores nulla voluptates fugit magni.
+        Omnis veniam, quos assumenda iure voluptate ea neque architecto hic voluptates inventore ullam, magnam quo! Ea, blanditiis aliquam, explicabo deserunt beatae odio possimus tempora est eaque id, ipsa quos quas?
+        Consequuntur officia ex assumenda, nisi eius, expedita consequatur a nam ad ducimus distinctio reprehenderit, libero vel ipsum tenetur obcaecati facere. Obcaecati quod unde ab nisi assumenda ipsa ullam dignissimos a.</p></div>
+      </div>
+    </div>
+
+</body>
+<footer class="row">
+    <div class="col-12 d-flex footer-logo-container">
+      <img class="footer-logo" src="assets/jazzy-logo/Jazy_logo-01.png" alt="">  
+    </div>
+    <div id="non-logo-footer" class="col-12 non-logo-footer">
+        <div class="row footer-row">
+                <div class="d-flex footer-links">
+                        <a href="#">Ana Sayfa</a>
+                        <a href="#">Hakkımızda</a>
+                        <a href="#">Ürünler</a>
+                        <a href="#">Blog</a>
+                        <a href="#">İletişim</a>
+                </div>
+                <div class="header-item header-icons footer-icons row">
+                    <div class="d-flex"><img src="assets/facebook-social-logo-svgrepo-com.svg" alt=""></div>
+                    <div class="d-flex"><img src="assets/instagram-logo-svgrepo-com.svg" alt=""></div>
+                    <div class="d-flex"><img src="assets/twitter-svgrepo-com.svg" alt=""></div>
+                </div> 
+         </div>
+    </div>
+</footer>
+    
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+</script>
+</html>

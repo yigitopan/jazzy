@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+.pattern-bg {
+    background-image: url('../assets/JazzyPattern1.png');
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    z-index: -35;
+}
 
 body {
     overflow: hidden;
@@ -355,7 +365,7 @@ html {
 
 .bilgi-title {
     padding-bottom: 0.5rem;
-    font-weight: 700;
+    font-family: roundedBold!important;
     font-size: 45px;
 }
 
@@ -429,7 +439,6 @@ transform: translate(-30%);
     flex-direction: column;
     justify-content: center;
     overflow-wrap: anywhere;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
 
     display: flex;
     align-items:start;
@@ -440,7 +449,7 @@ transform: translate(-30%);
 .main-hero-underlay span {
     display: block;
     font-size: 85px;
-    font-weight: 900;
+    font-family: roundedBold!important;
     line-height: 100%;
 }
 
