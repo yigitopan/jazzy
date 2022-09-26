@@ -12,6 +12,12 @@ header, body, footer {
   font-family: roundedDefault!important;
 }
 
+.row.hp-item.hp-icons  .col-12.col-lg-4:hover {
+  opacity: 0.8;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
 .overlay {
     height: 0%;
     width: 100%;
@@ -19,7 +25,7 @@ header, body, footer {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color:#1920EF;
+    background-color:#F20000;
     overflow-y: hidden;
     transition: 0.5s;
   }
@@ -38,7 +44,7 @@ header, body, footer {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #F20000;
+    color: #ffffff;
     display: block;
     transition: 0.3s;
   }
