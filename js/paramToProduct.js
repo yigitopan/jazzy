@@ -23,12 +23,17 @@ const getProductDetails = () => {
     let tur;
     let gr;
     let title;
+    let paw;
 
     if(attributes[0] == "kedi") {
         tur = "Kedi";
+        paw = "cat";        
+        document.querySelector(".breadcrumbs-right img").setAttribute("src",`assets/pawcat.png`)
     }
     else {
         tur = "Köpek";
+        paw = "dog";
+        document.querySelector(".breadcrumbs-right img").setAttribute("src",`assets/pawdog.png`)
     }
     /////////////////////////////////////////////
     if(attributes[1] == "ton") {
@@ -59,6 +64,9 @@ const getProductDetails = () => {
 document.addEventListener('DOMContentLoaded', function() {
     var urun = getUrlParameter('urun');
     document.querySelector(".product-main-img").setAttribute("src",`assets/png-products/${urun}.png`)
+    document.querySelector(".product-main-img").setAttribute("src",`assets/png-products/${urun}.png`)
+    
+
     
     getProductDetails();
 }, false);
