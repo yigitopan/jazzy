@@ -161,7 +161,7 @@
 
                     <div class="kedi-grid tavuk-grid col-6 d-flex flex-column item-grid">
                         <div class="col-12 item-grid-inner d-flex flex-column justify-content-center">
-                            <div class="mb-3 mb-md-0 d-flex justify-content-center"><img id="exemplar" src="assets/png-products/kedi-tavuk-400gr.png" alt=""></div>
+                            <div class="mb-3 mb-md-0 d-flex justify-content-center"><img class="exemplar" src="assets/png-products/kedi-tavuk-400gr.png" alt=""></div>
                             <div><h3 class="mb-0 grid-title">Tavuklu Kedi</h3></div>
                           <div><p class="grid-desc">Monoproteinli süper yaş mama</p></div>
                           <div class="row pb-4 justify-content-between grid-bottom">
@@ -173,7 +173,7 @@
 
                     <div class="kedi-grid sigir-grid col-6 d-flex flex-column item-grid">
                         <div class="col-12 item-grid-inner d-flex flex-column justify-content-center">
-                            <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  src="assets/png-products/kedi-sigir-400gr.png" alt=""></div>
+                            <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  class="exemplar" src="assets/png-products/kedi-sigir-400gr.png" alt=""></div>
                             <div><h3 class="mb-0 grid-title">Sığır Etli Kedi</h3></div>
                           <div><p class="grid-desc">Monoproteinli süper yaş mama</p></div>
                           <div class="row pb-4 justify-content-between grid-bottom">
@@ -184,7 +184,7 @@
                     </div>
                     <div class="kedi-grid ton-grid col-6 d-flex flex-column item-grid">
                         <div class="col-12 item-grid-inner d-flex flex-column justify-content-center">
-                            <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  src="assets/png-products/kedi-ton-400gr.png" alt=""></div>
+                            <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  class="exemplar" src="assets/png-products/kedi-ton-400gr.png" alt=""></div>
                             <div><h3 class="mb-0 grid-title">Ton Balıklı Kedi</h3></div>
                           <div><p class="grid-desc">Monoproteinli süper yaş mama</p></div>
                           <div class="row pb-4 justify-content-between grid-bottom">
@@ -233,7 +233,7 @@
 
                     <div class="kopek-grid tavuk-grid col-6 d-flex flex-column item-grid">
                         <div class="col-12 item-grid-inner d-flex flex-column justify-content-center">
-                            <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  src="assets/png-products/kopek-tavuk-400gr.png" alt=""></div>
+                            <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  class="exemplar" src="assets/png-products/kopek-tavuk-400gr.png" alt=""></div>
                             <div><h3 class="mb-0 grid-title">Tavuklu Köpek</h3></div>
                           <div><p class="grid-desc">Monoproteinli süper yaş mama</p></div>
                           <div class="row pb-4 justify-content-between grid-bottom">
@@ -245,7 +245,7 @@
 
                     <div class="kopek-grid sigir-grid col-6 d-flex flex-column item-grid">
                         <div class="col-12 item-grid-inner d-flex flex-column justify-content-center">
-                            <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  src="assets/png-products/kopek-sigir-400gr.png" alt=""></div>
+                            <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  class="exemplar" src="assets/png-products/kopek-sigir-400gr.png" alt=""></div>
                             <div><h3 class="mb-0 grid-title">Sığır Etli Köpek</h3></div>
                           <div><p class="grid-desc">Monoproteinli süper yaş mama</p></div>
                           <div class="row pb-4 justify-content-between grid-bottom">
@@ -256,7 +256,7 @@
                     </div>
                     <div class="kopek-grid ton-grid col-6 d-flex flex-column item-grid">
                         <div class="col-12 item-grid-inner d-flex flex-column justify-content-center">
-                            <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  src="assets/png-products/kopek-ton-400gr.png" alt=""></div>
+                            <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  class="exemplar" src="assets/png-products/kopek-ton-400gr.png" alt=""></div>
                             <div><h3 class="mb-0 grid-title">Ton Balıklı Köpek</h3></div>
                           <div><p class="grid-desc">Monoproteinli süper yaş mama</p></div>
                           <div class="row pb-4 justify-content-between grid-bottom">
@@ -327,7 +327,14 @@
 
         itemGrids.forEach(iG => {
             if(iG.classList.contains(`${secilenTur}-grid`)){
-                iG.setAttribute("style","display:block!important")
+                iG.setAttribute("style","display:block!important");
+
+                const imgsToShow = document.querySelectorAll(`.${secilenTur}-grid img`)
+                const exemplarH = document.querySelector(`.${secilenTur}-grid .exemplar`).offsetHeight;
+
+                imgsToShow.forEach(img => {
+                    img.setAttribute('style',`height:${exemplarH}px`)
+                })
             }
             else {
                 iG.setAttribute("style","display:none!important")
