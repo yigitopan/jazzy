@@ -37,6 +37,8 @@
     </div>
 </header>
 <body>
+    <div class="pattern-bg"></div>
+
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -115,9 +117,7 @@ Eğer ki patili dostunuz güzel yemek kokularını almış ve masaya doğru geli
                 </div>
             </div>
         </div>
-    </div>
-            
-    <div class="row">
+
         <div class="d-flex align-items-stretch mt-3 col-12 col-md-6 col-lg-4">
             <div class="row justify-content-center">
                 <div class="col-12 row">
@@ -147,6 +147,10 @@ Avokado
                 </div>
             </div>
         </div>
+    </div>
+            
+    <div class="row">
+       
     </div>   
 </div>
 
@@ -176,6 +180,20 @@ Avokado
 
     
 <script>
+    const patternBg = document.querySelector(".pattern-bg");
+
+function resizePattern() {
+    var screenHeight = document.body.scrollHeight;
+    patternBg.setAttribute("style",`height:${screenHeight}px`)
+}   
+
+window.addEventListener('resize', function(event) {
+    resizePattern();
+}, true);
+
+resizePattern();
+
+
 
 var i;
 var divs = document.querySelectorAll('.blog-content');
