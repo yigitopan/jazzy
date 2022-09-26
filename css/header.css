@@ -8,6 +8,10 @@
   src: url(../assets/font/RoundedMplus1c-ExtraBold.ttf);
 }
 
+.header-logo, .footer-logo {
+  cursor: pointer;
+}
+
 header, body, footer {
   font-family: roundedDefault!important;
 }
