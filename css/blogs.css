@@ -2,6 +2,7 @@ body,html {
     overflow-x: hidden;
 }
 
+
 .pattern-bg {
     background-image: url('../assets/JazzyPattern1.png');
     background-size: contain;

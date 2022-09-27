@@ -56,8 +56,38 @@
         <div class="d-flex flex-column pb-5">
             <div class="d-flex justify-content-between"><p class="filter-p">Kategori</p> <span class="d-flex d-md-none filter-mobile-close">x</span></div>
             <div class="my-2" style="width:40%; border-top: 2px solid black;"></div>
-            <div class="d-flex justify-content-between">Kedi Yaş Mama <span class="filter-plus">+</span></div>
-            <div class="d-flex justify-content-between">Köpek Yaş Mama <span class="filter-plus">+</span></div>
+            <div class="d-flex flex-wrap justify-content-between">
+                <button class="accordion d-flex p-0">Kedi Yaş Mama<span class="filter-plus">+</span></button>
+                <div class="panel px-0 mt-2">
+                    <form>
+                        <div>
+                            <input onclick="filterClick()" class="filtercb" type="checkbox" id="kedi400-2" name="filtertur" value="kedi-400">
+                            <label for="kedi400-2">400 Gr</label>
+                        </div>
+                        <div>
+                            <input onclick="filterClick()" class="filtercb" type="checkbox" id="kedi95-2" name="filtertur" value="kedi-95">
+                            <label for="kedi95-2">95 Gr</label>
+                        </div>
+                    </form>        
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between">
+                <button class="accordion d-flex p-0">Köpek Yaş Mama<span class="filter-plus">+</span></button>
+                <div class="panel px-0 mt-2">
+                    <form>
+                        <div>
+                            <input onclick="filterClick()" class="filtercb" type="checkbox" id="kopek400-2" name="filtertur" value="kopek-400">
+                            <label for="kopek400-2">400 Gr</label>
+                        </div>
+                        <div>
+                            <input onclick="filterClick()" class="filtercb" type="checkbox" id="kopek95-2" name="filtertur" value="kopek-95">
+                            <label for="kopek95-2">95 Gr</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+
         </div>
         <div class="d-none d-md-flex flex-column mb-5 cok-satan">
             <div><p class="filter-p">En Çok Satan</p></div>
@@ -77,16 +107,16 @@
             <div class=" my-2" style="width:40%; border-top: 2px solid black;"></div>
             <form name="filterradio">
                 <div>
-                    <input type="radio" id="ton" name="filtertur" value="ton">
-                    <label for="ton">Ton balığı</label>
+                    <input onclick="filterClick()" type="checkbox" class="filtercb" id="ton1" name="filtertur" value="ton-grid">
+                    <label for="ton1">Ton balığı</label>
                 </div>
                 <div>
-                    <input type="radio" id="tavuk" name="filtertur" value="tavuk">
-                    <label for="tavuk">Tavuk</label>
+                    <input onclick="filterClick()" type="checkbox" class="filtercb" id="tavuk1" name="filtertur" value="tavuk-grid">
+                    <label for="tavuk1">Tavuk</label>
                 </div>
                 <div>
-                    <input type="radio" id="sigir" name="filtertur" value="sigir">
-                    <label for="sigir">Sığır Eti</label>
+                    <input onclick="filterClick()" type="checkbox" class="filtercb" id="sigir1" name="filtertur" value="sigir-grid">
+                    <label for="sigir1">Sığır Eti</label>
                 </div>
             </form>
         </div>
@@ -104,9 +134,10 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 breadcrumbs-right d-flex justify-content-end">
-                <img src="assets/pawcat.png" alt="">
-                <img src="assets/pawdog.png" alt="">
-                <div></div>
+                <img style="transform: translateY(3px);" src="assets/page-switch-icons/PNG/jazzy_kedi_kopek-01.png" alt="">
+                <img class="single-paw position-absolute" src="assets/paw.png" alt="">
+                <img class="paw2" src="assets/page-switch-icons/PNG/jazzy_kedi_kopek-02.png" alt="">
+                <div style="width:165%!important"></div>
             </div>
         </div>
 
@@ -121,8 +152,36 @@
                 <div class="d-flex flex-column pb-5">
                     <div class="d-flex justify-content-between"><p class="filter-p">Kategori</p> <span class="d-flex d-md-none filter-mobile-close">x</span></div>
                     <div class="my-2" style="width:40%; border-top: 2px solid black;"></div>
-                    <div class="d-flex justify-content-between">Kedi Yaş Mama <span class="filter-plus">+</span></div>
-                    <div class="d-flex justify-content-between">Köpek Yaş Mama <span class="filter-plus">+</span></div>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <button class="accordion d-flex p-0">Kedi Yaş Mama<span class="filter-plus">+</span></button>
+                        <div class="panel px-0 mt-2">
+                            <form>
+                                <div>
+                                    <input onclick="filterClick()" class="filtercb" type="checkbox" id="kedi400-1" name="filtertur" value="kedi-400">
+                                    <label for="kedi400-1">400 Gr</label>
+                                </div>
+                                <div>
+                                    <input onclick="filterClick()" class="filtercb" type="checkbox" id="kedi95-1" name="filtertur" value="kedi-95">
+                                    <label for="kedi95-1">95 Gr</label>
+                                </div>
+                            </form>        
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <button class="accordion d-flex p-0">Köpek Yaş Mama<span class="filter-plus">+</span></button>
+                        <div class="panel px-0 mt-2">
+                            <form>
+                                <div>
+                                    <input onclick="filterClick()" class="filtercb" type="checkbox" id="kopek400-1" name="filtertur" value="kopek-400">
+                                    <label for="kopek400-1">400 Gr</label>
+                                </div>
+                                <div>
+                                    <input onclick="filterClick()" class="filtercb" type="checkbox" id="kopek95-1" name="filtertur" value="kopek-95">
+                                    <label for="kopek95-1">95 Gr</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <div class="d-flex flex-column mb-5 cok-satan">
                     <div><p class="filter-p">En Çok Satan</p></div>
@@ -140,19 +199,19 @@
                 <div class="d-flex flex-column mt-0 mt-md-5 pb-5">
                     <div><p class="filter-p">Lezzet</p></div>
                     <div class=" my-2" style="width:40%; border-top: 2px solid black;"></div>
-                    <form name="filterradio2">
-                    <div>
-                        <input type="radio" id="ton-2" name="filtertur" value="ton">
-                        <label for="ton-2">Ton balığı</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="tavuk-2" name="filtertur" value="tavuk">
-                        <label for="tavuk-2">Tavuk</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="sigir-2" name="filtertur" value="sigir">
-                        <label for="sigir-2">Sığır Eti</label>
-                    </div>
+                    <form name="filterradio">
+                        <div>
+                            <input onclick="filterClick()" type="checkbox" class="filtercb" id="ton2" name="filtertur" value="ton-grid">
+                            <label for="ton2">Ton balığı</label>
+                        </div>
+                        <div>
+                            <input onclick="filterClick()" type="checkbox" class="filtercb" id="tavuk2" name="filtertur" value="tavuk-grid">
+                            <label for="tavuk2">Tavuk</label>
+                        </div>
+                        <div>
+                            <input onclick="filterClick()" type="checkbox" class="filtercb" id="sigir2" name="filtertur" value="sigir-grid">
+                            <label for="sigir2">Sığır Eti</label>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -160,7 +219,7 @@
             <div class="col-12 col-md-9 pl-md-5">
                 <div class="row">
 
-                    <div class="kedi-grid tavuk-grid col-6 d-flex flex-column item-grid">
+                    <div class="kedi-grid tavuk-grid kedi-400 col-6 d-flex flex-column item-grid">
                         <div class="col-12 item-grid-inner d-flex flex-column justify-content-center">
                             <div class="mb-3 mb-md-0 d-flex justify-content-center"><img class="exemplar" src="assets/png-products/kedi-tavuk-400gr.png" alt=""></div>
                             <div><h3 class="mb-0 grid-title">Tavuklu Kedi</h3></div>
@@ -172,7 +231,7 @@
                         </div>
                     </div>
 
-                    <div class="kedi-grid sigir-grid col-6 d-flex flex-column item-grid">
+                    <div class="kedi-grid sigir-grid col-6 kedi-400 d-flex flex-column item-grid">
                         <div class="col-12 item-grid-inner d-flex flex-column justify-content-center">
                             <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  class="exemplar" src="assets/png-products/kedi-sigir-400gr.png" alt=""></div>
                             <div><h3 class="mb-0 grid-title">Sığır Etli Kedi</h3></div>
@@ -183,7 +242,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class="kedi-grid ton-grid col-6 d-flex flex-column item-grid">
+                    <div class="kedi-grid ton-grid col-6 d-flex kedi-400 flex-column item-grid">
                         <div class="col-12 item-grid-inner d-flex flex-column justify-content-center">
                             <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  class="exemplar" src="assets/png-products/kedi-ton-400gr.png" alt=""></div>
                             <div><h3 class="mb-0 grid-title">Ton Balıklı Kedi</h3></div>
@@ -195,7 +254,7 @@
                         </div>
                     </div>
 
-                    <div class="kedi-grid tavuk-grid col-6 d-flex klein flex-column item-grid">
+                    <div class="kedi-grid tavuk-grid col-6 d-flex kopek-95 klein flex-column item-grid">
                         <div class="col-12 item-grid-inner d-flex flex-column justify-content-center">
                             <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  src="assets/png-products/kedi-tavuk-95gr.png" alt=""></div>
                             <div><h3 class="mb-0 grid-title">Tavuklu Köpek</h3></div>
@@ -207,7 +266,7 @@
                         </div>
                     </div>
 
-                    <div class="kedi-grid sigir-grid col-6 d-flex klein flex-column item-grid">
+                    <div class="kedi-grid sigir-grid col-6 d-flex  kopek-95 klein flex-column item-grid">
                         <div class="col-12 item-grid-inner d-flex flex-column justify-content-center">
                             <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  src="assets/png-products/kedi-sigir-95gr.png" alt=""></div>
                             <div><h3 class="mb-0 grid-title">Sığır Etli Köpek</h3></div>
@@ -218,7 +277,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class="kedi-grid ton-grid col-6 d-flex klein flex-column item-grid">
+                    <div class="kedi-grid ton-grid col-6 d-flex klein kopek-95 flex-column item-grid">
                         <div class="col-12 item-grid-inner d-flex flex-column justify-content-center">
                             <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  src="assets/png-products/kedi-ton-95gr.png" alt=""></div>
                             <div><h3 class="mb-0 grid-title">Ton Balıklı Köpek</h3></div>
@@ -232,7 +291,7 @@
 
 
 
-                    <div class="kopek-grid tavuk-grid col-6 d-flex flex-column item-grid">
+                    <div class="kopek-grid tavuk-grid col-6 d-flex kopek-400 flex-column item-grid">
                         <div class="col-12 item-grid-inner d-flex flex-column justify-content-center">
                             <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  class="exemplar" src="assets/png-products/kopek-tavuk-400gr.png" alt=""></div>
                             <div><h3 class="mb-0 grid-title">Tavuklu Köpek</h3></div>
@@ -244,7 +303,7 @@
                         </div>
                     </div>
 
-                    <div class="kopek-grid sigir-grid col-6 d-flex flex-column item-grid">
+                    <div class="kopek-grid sigir-grid col-6 d-flex kopek-400 flex-column item-grid">
                         <div class="col-12 item-grid-inner d-flex flex-column justify-content-center">
                             <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  class="exemplar" src="assets/png-products/kopek-sigir-400gr.png" alt=""></div>
                             <div><h3 class="mb-0 grid-title">Sığır Etli Köpek</h3></div>
@@ -255,7 +314,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class="kopek-grid ton-grid col-6 d-flex flex-column item-grid">
+                    <div class="kopek-grid ton-grid col-6 d-flex kopek-400 flex-column item-grid">
                         <div class="col-12 item-grid-inner d-flex flex-column justify-content-center">
                             <div class="mb-3 mb-md-0 d-flex justify-content-center"><img  class="exemplar" src="assets/png-products/kopek-ton-400gr.png" alt=""></div>
                             <div><h3 class="mb-0 grid-title">Ton Balıklı Köpek</h3></div>
@@ -302,6 +361,80 @@
 
 
 <script>
+    const griditems = document.querySelectorAll('.item-grid')
+    const checkboxes = document.querySelectorAll(".filtercb");
+    let filter = [];
+
+function filterClick() {
+  filter = [];
+  checkboxes.forEach(cb => {
+    if (cb.checked == true){
+        filter.push(cb.value);
+    }
+  })
+
+  if(filter.length==0)  {
+    griditems.forEach(g => {
+        g.setAttribute('style','display:flex;')
+    })
+  }
+
+  else {
+    
+  var tadsayisi = 0;
+
+  filter.forEach(singleFilter => {
+            if(singleFilter.includes('ton') || singleFilter.includes('sigir') || singleFilter.includes('tavuk')){
+                tadsayisi++;
+            }
+    })
+
+  griditems.forEach(item => {
+    let showThis = false;
+    let tadiSecili = false;
+    filter.forEach(singleFilter => {
+        if(item.classList.contains(singleFilter)){
+            showThis=true;
+            if(singleFilter.includes('ton') || singleFilter.includes('sigir') || singleFilter.includes('tavuk')){
+                tadiSecili = true;
+            }
+        }
+        
+        
+    })
+
+    if((tadsayisi<2 && showThis) || (tadsayisi>=2 && showThis && tadiSecili)) {
+        item.setAttribute('style','display:flex!important;')
+    }
+    else {
+        item.setAttribute('style','display:none!important;')
+    }
+
+  })
+}
+  console.log(filter)
+}
+
+    function singlepawAlign() {
+    var rect = document.querySelector('.breadcrumbs-right').getBoundingClientRect().left;
+    var rect2 = document.querySelector('.paw2').getBoundingClientRect().left;
+    var singlepaw = document.querySelector('.single-paw')
+
+    singlepaw.setAttribute('style',`left:${rect2-rect}px`)
+}
+
+   if (window.innerWidth <= 800) {
+    var br = document.querySelector('.breadcrumbs-right');
+    var rect2 = document.querySelector('.paw2').getBoundingClientRect().left;
+    var tf = (window.innerWidth/2)-rect2
+
+    let brX = br.offsetLeft + br.offsetWidth / 2;
+    console.log(brX)
+    br.setAttribute('style',`transform:translateX(${tf}px)`)
+   }
+
+    singlepawAlign();
+
     const patternBg = document.querySelector(".pattern-bg");
 
     function resizePattern() {
@@ -316,33 +449,12 @@
     }
 
     window.addEventListener('resize', function(event) {
+        singlepawAlign();
         resizePattern();
     }, true);
 
     resizePattern();
 
-
-    function secilenTuruBul() {
-        const secilenTur = document.querySelector('input[name="filtertur"]:checked').value;
-        const itemGrids = document.querySelectorAll('.item-grid')
-
-        itemGrids.forEach(iG => {
-            if(iG.classList.contains(`${secilenTur}-grid`)){
-                iG.setAttribute("style","display:block!important");
-
-                const imgsToShow = document.querySelectorAll(`.${secilenTur}-grid img`)
-                const exemplarH = document.querySelector(`.${secilenTur}-grid .exemplar`).offsetHeight;
-
-                imgsToShow.forEach(img => {
-                    img.setAttribute('style',`height:${exemplarH}px`)
-                })
-            }
-            else {
-                iG.setAttribute("style","display:none!important")
-            }
-        })
-
-    }
 
     document.querySelector('.mobile-filter').addEventListener('click',function() {
         window.scrollTo({top: 0, behavior: 'smooth'});
@@ -351,25 +463,12 @@
         document.querySelector('body').classList.toggle('body-filter-open');
         
     })
-
     document.querySelector('.filter-mobile-close').addEventListener('click',function() {
         closeFilter();
     })
 
 
-   
 
-
-var rad1 = Array.from(document.filterradio.filtertur);
-var rad2 = Array.from(document.filterradio2.filtertur);
-var rad = rad1.concat(rad2)
-
-for (var i = 0; i < rad.length; i++) {
-    rad[i].addEventListener('change', function() {
-        secilenTuruBul();
-        closeFilter();
-    });
-}
 
 
 function openNav() {
@@ -380,5 +479,21 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
 
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
 </script>
 </html>
